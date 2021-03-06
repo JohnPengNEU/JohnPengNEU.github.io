@@ -45,6 +45,52 @@
 </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-sh-script" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2021-03-06T07:02:21.746Z"><a href="/2021/03/05/sh-script/">2021-03-05</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2021/03/05/sh-script/">sh or bash script</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>Here is the introduction of sh script preparing.</p>
+<h2 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h2><h3 id="create-file-with-bin-folder"><a href="#create-file-with-bin-folder" class="headerlink" title="create file with bin folder"></a>create file with bin folder</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch ~/bin/firstScript.sh</span><br></pre></td></tr></table></figure>
+<p>Change the permission</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chmod u+x ~/bin/firstScript.sh</span><br></pre></td></tr></table></figure>
+<h3 id="Edit-script"><a href="#Edit-script" class="headerlink" title="Edit script"></a>Edit script</h3><p>Script should start with</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="comment">#!/bin/bash</span></span><br></pre></td></tr></table></figure>
+<p>define variable(no space before =)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ variable=$(<span class="built_in">command</span> -options arguments)</span><br></pre></td></tr></table></figure>
+<p>When refer to variable, it would be better to suround $variable with “”.</p>
+<h3 id="if-then-condition"><a href="#if-then-condition" class="headerlink" title="if-then condition"></a>if-then condition</h3><p>There is a whitespace behind if. Also, double [] is recommended.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">if</span> [[ <span class="variable">$REPLY</span> =~ ^[Yy]$ ]]; <span class="keyword">then</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<h2 id="Git-only-add-files-within-a-folder"><a href="#Git-only-add-files-within-a-folder" class="headerlink" title="Git only add files within a folder"></a>Git only add files within a folder</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add  ~/CS5008/xqpeng_CS5008</span><br></pre></td></tr></table></figure>
+<p>update the folder</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add  -u ~/CS5008/xqpeng_CS5008</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
   <article id="post-005change-mode" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
